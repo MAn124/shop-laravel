@@ -11,7 +11,11 @@
             <h4>Price: {{$product['price']}}</h4>
             <p>Price: {{$product['desc']}}</p>
             <br>
-            <button class="btn btn-primary">Add to cart</button>
+            <form action="/add_cart" method="post">
+                @csrf
+                <input name="product_id" type="hidden" value="{{$product['id']}}">
+                <button class="btn btn-primary">Add to cart</button>
+            </form>
             <button class="btn btn-warning ml-4">Buy now</button>
             <br>
         </div>
