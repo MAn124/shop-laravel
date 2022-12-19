@@ -23,5 +23,15 @@
     .slider-img {
         height: 500px !important;
     }
+    .slider-text {
+        background-color: #c3fff76b;
+        color: black;
+    }
+    .detail-img {
+        height: 200px;
+    }
+    .search-img {
+        height: 50px;
+    }
 </style>
 </html>
